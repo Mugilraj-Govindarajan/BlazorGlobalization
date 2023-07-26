@@ -1,0 +1,11 @@
+﻿@page "/"
+
+@using System.Globalization
+
+<p>DateString</p>
+
+<span>@date.ToString("MMM d", CultureInfo.CurrentCulture), @date.ToString("dddd", CultureInfo.CurrentCulture)</span>
+
+@code {
+    DateTime date = new DateTime(2023, 7, 23);
+}
